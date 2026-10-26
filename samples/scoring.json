@@ -1,0 +1,11 @@
+{
+  "grades": { "A": 70, "B": 40, "C": 0 },
+  "rules": [
+    { "field": "budget", "op": "gte", "value": 500000, "points": 40, "label": "budget élevé" },
+    { "field": "employees", "op": "gte", "value": 10, "points": 20, "label": "entreprise structurée" },
+    { "field": "source", "op": "eq", "value": "recommandation", "points": 25, "label": "recommandation" },
+    { "field": "country", "op": "in", "value": ["Togo", "Bénin"], "points": 10, "label": "zone cible" },
+    { "field": "email", "op": "empty", "points": -15, "label": "pas d'e-mail" },
+    { "field": "last_contact_days", "op": "gt", "value": 60, "points": -20, "label": "contact ancien" }
+  ]
+}
